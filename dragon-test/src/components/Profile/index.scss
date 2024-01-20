@@ -1,0 +1,49 @@
+.Profile {
+    &-Content {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        top: 197px;
+
+        @media (min-width: 768px) {
+            width: 100%;
+            right: 268px;
+            top: 375px;
+        }
+    }
+
+    &-Group {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        max-width: 69vw;
+        @media (min-width: 768px) {
+            justify-content: flex-start;
+            padding: 0px;
+            max-width: 780px;
+        }
+    }
+
+    &-Img {
+        border-radius: 100%;
+        margin-right: 10px;
+        border: solid 3px #fff;
+        @media (min-width: 768px) {
+            border-radius: 100%;
+            margin-right: 20px;
+            border: solid 3px #fff;
+        }
+    }
+    &-Name{
+        font-size: 18px;
+        height: 50%;
+        @media (min-width: 768px) {
+           font-size: 26px;
+        }
+    }
+}
