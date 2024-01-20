@@ -51,6 +51,6 @@ Este projeto foi desenvolvido como parte de um desafio de programação, com o o
 
 ### Agradecimentos
 
-Agradeço pela oportunidade de realizar este desafio! Foi uma experiência incrível trabalhar nesse projeto e implementar funcionalidades extras, como o sistema de likes, comentários e integração com a Unsplash API. A utilização do Auth0 proporcionou uma camada adicional de segurança ao projeto. Espero que este projeto atenda às expectativas. Obrigado!
+Agradeço pela oportunidade de realizar este desafio! Foi uma experiência incrível trabalhar nesse projeto e implementar funcionalidades extras, como o sistema de likes, comentários e integração com a Unsplash API. A utilização do Auth0 proporcionou uma camada adicional de segurança ao projeto. Espero que este projeto atenda às expectativas. Obrigada!
 
 🚀🐉🔥
