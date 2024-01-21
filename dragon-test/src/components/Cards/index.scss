@@ -20,10 +20,9 @@
     &-Cards{
         display: flex;
         justify-content: center;
-        width: 100vw;
+        width: 98vw;
         background: #eee9f3;  
-        margin-top: 15px;
-        margin-bottom: 15px;  
+        margin:0;
     }
     &-Button {
         cursor: pointer;
