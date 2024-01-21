@@ -12,7 +12,7 @@
     margin-top: 1rem;
 
     @media (min-width: 768px) {
-        width: 730px;
+        width: 530px;
     }
    &-Comments{
      &-Row{
@@ -69,8 +69,7 @@
         margin-bottom: 2.5rem;;
         .dragon-photo{
             width: 100%;
-            object-fit: cover;
-            height: 686px;
+            object-fit:contain;
             object-position: 0 0;
             border-radius: 9px 0px 0px 0px;
         }
