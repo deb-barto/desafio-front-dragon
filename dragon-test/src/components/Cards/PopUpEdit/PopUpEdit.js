@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import axios from "axios";
-import "./index.scss";
+import React, { useState } from "react"
+import axios from "axios"
+import "./index.scss"
 
 const PopUpEdit = ({ dragon, photo, onClose, fetchDragons }) => {
-  const [editing, setEditing] = useState(false);
-  const [newName, setNewName] = useState(dragon.name);
-  const [newType, setNewType] = useState(dragon.type);
-  const [newHistories, setNewHistories] = useState(dragon.histories);
-  const [newCreatedAt, setNewCreatedAt] = useState(dragon.createdAt);
+  const [editing, setEditing] = useState(false)
+  const [newName, setNewName] = useState(dragon.name)
+  const [newType, setNewType] = useState(dragon.type)
+  const [newHistories, setNewHistories] = useState(dragon.histories)
+  const [newCreatedAt, setNewCreatedAt] = useState(dragon.createdAt)
 
-  const dragonTypes = ["Gelo", "Fogo", "Ácido", "Oriental", "Escultura"];
+  const dragonTypes = ["Gelo", "Fogo", "Ácido", "Oriental", "Escultura"]
 
   const handleEditClick = () => {
     setEditing(true);
@@ -17,17 +17,17 @@ const PopUpEdit = ({ dragon, photo, onClose, fetchDragons }) => {
 
   const handleSaveClick = async () => {
     try {
-      const url = `http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon/${dragon.id}`;
+      const url = `http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon/${dragon.id}`
       await axios.put(url, {
         name: newName,
         type: newType,
         histories: newHistories,
         createdAt: newCreatedAt,
       });
-      fetchDragons();
-      onClose();
+      fetchDragons()
+      onClose()
     } catch (error) {
-      console.error("Error updating dragon:", error);
+      console.error("Error updating dragon:", error)
     }
   };
 
@@ -38,11 +38,11 @@ const PopUpEdit = ({ dragon, photo, onClose, fetchDragons }) => {
 
     if (isConfirmed) {
       try {
-        const url = `http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon/${dragon.id}`;
-        await axios.delete(url);
-        fetchDragons();
+        const url = `http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon/${dragon.id}`
+        await axios.delete(url)
+        fetchDragons()
 
-        onClose();
+        onClose()
       } catch (error) {
         console.error("Error deleting dragon:", error);
       }

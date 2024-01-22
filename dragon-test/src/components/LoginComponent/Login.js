@@ -1,11 +1,11 @@
-import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
-import { images } from "../../components/LoginComponent/utils/ImgImports";
-import "./index.scss";
+import React from "react"
+import { useAuth0 } from "@auth0/auth0-react"
+import { images } from "../../components/LoginComponent/utils/ImgImports"
+import "./index.scss"
 
 const LoginButton = () => {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
-  const { logoDragon, logoTipo } = images;
+  const { logoDragon, logoTipo } = images
 
   return (
     !isAuthenticated && (
@@ -33,4 +33,4 @@ const LoginButton = () => {
   );
 };
 
-export default LoginButton;
+export default LoginButton

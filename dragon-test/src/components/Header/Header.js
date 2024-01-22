@@ -1,12 +1,12 @@
-import { useAuth0 } from '@auth0/auth0-react';
-import LogoutButton from "./LogoutButton/LogoutButton";
-import { images } from "./utils/ImgImports";
-import "../Header/index.scss";
+import { useAuth0 } from '@auth0/auth0-react'
+import LogoutButton from "./LogoutButton/LogoutButton"
+import { images } from "./utils/ImgImports"
+import "../Header/index.scss"
 
 
 const Header = () => {
-  const { isAuthenticated } = useAuth0();
-  const { logoDragon } = images;
+  const { isAuthenticated } = useAuth0()
+  const { logoDragon } = images
 
   return (
     isAuthenticated && (

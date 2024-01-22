@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 import "./index.scss"
 
 const CommentPopUp = ({ dragonId, onClose, onCommentSubmit }) => {
-  const [comment, setComment] = useState("");
+  const [comment, setComment] = useState("")
 
   const handleInputChange = (e) => {
-    setComment(e.target.value);
+    setComment(e.target.value)
   };
 
   const handleSubmit = (e) => {
@@ -16,16 +16,16 @@ const CommentPopUp = ({ dragonId, onClose, onCommentSubmit }) => {
     }
 
     const storedComments =
-      JSON.parse(localStorage.getItem("dragonComments")) || {};
-    const dragonComments = storedComments[dragonId] || [];
-    const updatedComments = [...dragonComments, comment];
-    storedComments[dragonId] = updatedComments;
-    localStorage.setItem("dragonComments", JSON.stringify(storedComments));
+      JSON.parse(localStorage.getItem("dragonComments")) || {}
+    const dragonComments = storedComments[dragonId] || []
+    const updatedComments = [...dragonComments, comment]
+    storedComments[dragonId] = updatedComments
+    localStorage.setItem("dragonComments", JSON.stringify(storedComments))
 
     onCommentSubmit(updatedComments);
-    setComment("");
+    setComment("")
     if (onClose && typeof onClose === "function") {
-      onClose();
+      onClose()
     }
   };
 
@@ -50,4 +50,4 @@ const CommentPopUp = ({ dragonId, onClose, onCommentSubmit }) => {
   );
 };
 
-export default CommentPopUp;
+export default CommentPopUp

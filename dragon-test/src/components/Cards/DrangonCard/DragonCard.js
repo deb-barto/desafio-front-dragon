@@ -92,10 +92,10 @@ const DragonCard = ({ dragon, photo, onClick }) => {
             )}
 
             <div className="Card-DragonInfoRow">
-              <h2>{dragon.name}</h2>
+              <h2 className="Card-DragonInfoRow-name">{dragon.name}</h2>
               <p>Tipo: {dragon.type}</p>
               <p>
-                História:{" "}
+                História:{""}
                 <ExpandableText text={dragon.histories} maxCaracteres={80} />
               </p>
             </div>
@@ -108,7 +108,7 @@ const DragonCard = ({ dragon, photo, onClick }) => {
               <CommentPopUp
                 dragonId={dragon.id}
                 onCommentSubmit={handleCommentSubmit}
-                onClose={() => setShowCommentBox(false)} // Adicionando a função onClose
+                onClose={() => setShowCommentBox(false)}
               />
             )}
           </div>

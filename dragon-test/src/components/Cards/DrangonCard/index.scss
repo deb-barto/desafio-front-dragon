@@ -1,64 +1,64 @@
-.Card{
+.Card {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:auto;
+    width: auto;
     height: auto;
     border-radius: 3px;
-    box-shadow: 6px 4px 9px -9px rgba(0,0,0,0.36);
+    box-shadow: 6px 4px 9px -9px rgba(0, 0, 0, 0.36);
     margin-bottom: 1rem;
     margin-top: 1rem;
 
     @media (min-width: 768px) {
         width: 530px;
     }
-   &-Comments{
-     &-Row{
-        display: flex;
-        width: 90%;
-        flex-direction: column;
-        align-content: flex-start;
-        align-items: flex-start;
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
-     }
-     &-divIcon{
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-     }
-     &-Name{
-        color: #680e81;
-        font-weight:700;
-     }
-     &-divMain{
-        padding: 0.4rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-     }
-   }
+    &-Comments {
+        &-Row {
+            display: flex;
+            width: 90%;
+            flex-direction: column;
+            align-content: flex-start;
+            align-items: flex-start;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+        }
+        &-divIcon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        &-Name {
+            color: #680e81;
+            font-weight: 700;
+        }
+        &-divMain {
+            padding: 0.4rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
 
-    &-Edit-Button{
+    &-Edit-Button {
         background: none;
         border: none;
         cursor: pointer;
     }
-    &-Header{
+    &-Header {
         display: flex;
         width: 90%;
         margin-left: -10px;
     }
-    &-Container{
+    &-Container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
-    &-ImageDragon{
+    &-ImageDragon {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -66,27 +66,27 @@
         width: 95%;
         border: solid 1px #a7a7a7;
         border-radius: 9px;
-        margin-bottom: 2.5rem;;
-        .dragon-photo{
+        margin-bottom: 2.5rem;
+        .dragon-photo {
             width: 100%;
-            object-fit:contain;
+            object-fit: contain;
             object-position: 0 0;
             border-radius: 9px 0px 0px 0px;
         }
     }
-   
+
     &-Histories {
-        max-height: calc(1.2em *3); 
+        max-height: calc(1.2em * 3);
         overflow: hidden;
-        text-overflow: ellipsis; 
+        text-overflow: ellipsis;
         white-space: pre-line;
-        &-Full{
+        &-Full {
             max-height: none;
             overflow: visible;
             text-overflow: initial;
             white-space: pre-line;
-          }
-        &-Btn{
+        }
+        &-Btn {
             display: inline-block;
             background: none;
             border: none;
@@ -96,14 +96,22 @@
             font-size: inherit;
             margin-top: 4px; // Ajuste conforme necessário
         }
-      }
+    }
 
-    &-DragonInfoRow{
+    &-DragonInfoRow {
         width: 98%;
         padding: 20px;
+        &-name {
+            width: 100%;
+            max-height: 3.6em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: pre-line;
+            height: auto;
+        }
     }
-    &-Profile{
-        &-Group{
+    &-Profile {
+        &-Group {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -120,25 +128,27 @@
                 border: solid 3px #fff;
             }
         }
-        &-Name{
+        &-Name {
             font-size: 15px;
             height: 50%;
             @media (min-width: 768px) {
-               font-size: 18px;
+                font-size: 18px;
             }
         }
     }
-    &-IconsRow{
+    &-IconsRow {
         display: flex;
         width: 90%;
-        padding:10px;
-        justify-content:space-around;
+        padding: 10px;
+        justify-content: space-around;
         border: solid 1px #d0d0d0;
         border-left: none;
         border-right: none;
-        &-CommentBtn, &-Likebtn, &-SharedBtn{
+        &-CommentBtn,
+        &-Likebtn,
+        &-SharedBtn {
             background-color: #eeeeee00;
-            fill:#680e81;
+            fill: #680e81;
             border: none;
         }
     }

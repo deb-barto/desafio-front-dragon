@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import "./index.scss";
+import React, { useState } from "react"
+import "./index.scss"
 
 const PopUpRegister = ({ onClose, onAddDragon }) => {
-  const [name, setName] = useState("");
-  const [type, setType] = useState("");
-  const [histories, setHistories] = useState("");
+  const [name, setName] = useState("")
+  const [type, setType] = useState("")
+  const [histories, setHistories] = useState("")
 
-  const dragonTypes = ["Gelo", "Fogo", "Ácido", "Oriental", "Escultura"];
+  const dragonTypes = ["Gelo", "Fogo", "Ácido", "Oriental", "Escultura"]
 
   const handleAddDragon = () => {
     const newDragon = {
@@ -16,9 +16,9 @@ const PopUpRegister = ({ onClose, onAddDragon }) => {
       histories,
     };
 
-    onAddDragon(newDragon);
-    onClose();
-  };
+    onAddDragon(newDragon)
+    onClose()
+  }
 
   return (
     <div className="Register-popup-backdrop">
@@ -61,7 +61,7 @@ const PopUpRegister = ({ onClose, onAddDragon }) => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PopUpRegister;
+export default PopUpRegister
