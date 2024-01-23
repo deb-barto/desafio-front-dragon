@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 import "./index.scss"
 
 const ExpandableText = ({ text, maxCaracteres }) => {
@@ -16,8 +16,8 @@ const ExpandableText = ({ text, maxCaracteres }) => {
     }
   };
 
-  const truncatedText = calculateMaxCaracteres(text, maxCaracteres);
-  const buttonText = expanded ? "Mostrar menos" : "... ver mais";
+  const truncatedText = calculateMaxCaracteres(text, maxCaracteres)
+  const buttonText = expanded ? "   Mostrar menos" : "... ver mais"
 
   return (
     <div className={`Card-Histories ${expanded ? "full" : ""}`}>

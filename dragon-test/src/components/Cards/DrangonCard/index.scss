@@ -76,7 +76,6 @@
     }
 
     &-Histories {
-        max-height: calc(1.2em * 3);
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: pre-line;
@@ -90,11 +89,12 @@
             display: inline-block;
             background: none;
             border: none;
-            color: rgb(28, 12, 59); // Altere a cor conforme necessário
+            color: rgb(134, 16, 89);
+            width: 100%;
             cursor: pointer;
             padding: 0;
             font-size: inherit;
-            margin-top: 4px; // Ajuste conforme necessário
+            margin-top: 4px;
         }
     }
 
